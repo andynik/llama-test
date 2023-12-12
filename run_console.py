@@ -4,7 +4,7 @@ import sys
 from termcolor import colored
 from llama_cpp import Llama
 
-MODEL_PATH = "llama/llama-2-7b-chat"
+MODEL_PATH = "llama-test/wizardLM-7B-GGML/wizardLM-7B.ggmlv3.q4_1.bin"
 MAX_TOKENS = 2048
 
 def run_console_app():
