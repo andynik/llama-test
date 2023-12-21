@@ -4,10 +4,7 @@ import sys
 from termcolor import colored
 from llama_cpp import Llama
 
-# MODEL_PATH = "wizardLM-7B-GGML/wizardLM-7B.ggmlv3.q4_1.bin"
-# os.add_dll_directory() # for resolving .dll error
-# MODEL_PATH = "Llama-2-7B-Chat-GGUF/llama-2-7b-chat.Q4_0.gguf"
-MODEL_PATH = "Llama-2-70B-Chat-GGUF/llama-2-70b.Q4_K_M.gguf"
+MODEL_PATH = "Llama-2-70B-Chat-GGUF/llama-2-70b-chat.Q4_K_M.gguf"
 
 MAX_TOKENS = 2048
 
