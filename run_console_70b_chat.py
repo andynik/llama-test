@@ -13,7 +13,7 @@ def run_console_app():
         print(f"Error: Invalid model path '{MODEL_PATH}'")
         sys.exit(1)
 
-    llm = Llama(model_path=MODEL_PATH)
+    llm = Llama(model_path=MODEL_PATH, n_gpu_layers=-1)
 
     print(colored("\n## Welcome to the Llama Console App! ##\n", "yellow"))
     print("Enter your prompt (or 'q' to quit):")
