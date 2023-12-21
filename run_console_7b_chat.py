@@ -4,8 +4,7 @@ import sys
 from termcolor import colored
 from llama_cpp import Llama
 
-# MODEL_PATH = "wizardLM-7B-GGML/wizardLM-7B.ggmlv3.q4_1.bin"
-MODEL_PATH = "Llama-2-7B-Chat-GGUF/llama-2-7b-chat.Q4_0.gguf"
+MODEL_PATH = "Llama-2-7B-Chat-GGUF/llama-2-7b-chat.Q4_K_M.gguf"
 MAX_TOKENS = 2048
 
 def run_console_app():
@@ -13,7 +12,7 @@ def run_console_app():
         print(f"Error: Invalid model path '{MODEL_PATH}'")
         sys.exit(1)
 
-    llm = Llama(model_path=MODEL_PATH)
+    llm = Llama(model_path=MODEL_PATH, n_gpu_layers=-1)
 
     print(colored("\n## Welcome to the Llama Console App! ##\n", "yellow"))
     print("Enter your prompt (or 'q' to quit):")
